@@ -1017,7 +1017,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
         className="mb-8 text-center"
       >
         <h1 className="text-4xl font-bold text-text-primary-light dark:text-text-primary-dark mb-3">
-          GLOBAL INDUSTRY DATABASE
+          GLOBAL IT MSP INDUSTRY DATABASE
         </h1>
         <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark">
           Verified directory and insights on airline industry IT infrastructure and MSP opportunities
