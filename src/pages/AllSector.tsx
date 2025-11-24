@@ -923,10 +923,7 @@ export function AllSector({ onNavigate }: AllSectorProps) {
           </h2>
 
           {/* Table Container */}
-          <div
-            className="overflow-x-auto"
-            style={{ maxHeight: '600px' }}
-          >
+          <div className="overflow-x-auto">
             <table className={`w-full border-collapse ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
               <thead className="sticky top-0 z-10">
                 <tr className={`border-b-2 ${isDark ? 'border-navy-light' : 'border-gray-300'}`}>
