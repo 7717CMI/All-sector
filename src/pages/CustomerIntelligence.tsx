@@ -1101,7 +1101,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
             })()}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
               <XAxis dataKey="category" stroke={isDark ? '#9ca3af' : '#6b7280'} />
-              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Endpoints', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: isDark ? '#1e293b' : '#ffffff',
@@ -1149,7 +1149,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
             })()}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
               <XAxis dataKey="category" stroke={isDark ? '#9ca3af' : '#6b7280'} />
-              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Servers', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: isDark ? '#1e293b' : '#ffffff',
