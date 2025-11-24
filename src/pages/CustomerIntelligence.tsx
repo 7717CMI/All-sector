@@ -1020,7 +1020,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
           GLOBAL IT MSP INDUSTRY DATABASE
         </h1>
         <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark">
-          Verified directory and insights on airline industry IT infrastructure and MSP opportunities
+          Potential Customer Database
         </p>
       </motion.div>
 
@@ -1191,7 +1191,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
               }).filter(d => d.routers > 0 || d.switches > 0)
             })()}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
-              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={100} />
+              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={100} style={{ fontSize: '12px' }} />
               <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Devices', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
               <Tooltip
                 contentStyle={{
@@ -1232,7 +1232,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
               }).filter(d => d.budget > 0)
             })()}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
-              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={120} interval={0} />
+              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={120} interval={0} style={{ fontSize: '12px' }} />
               <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'IT Budget (₹ Crores)', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
               <Tooltip
                 contentStyle={{
@@ -1321,9 +1321,6 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
               <tr className={`border-b-2 ${isDark ? 'border-navy-light' : 'border-gray-300'}`}>
                 <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-gray-200 text-gray-900' : 'bg-gray-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '60px', maxWidth: '60px' }}>
                   S.No.
-                </th>
-                <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
-                  Customer Name
                 </th>
                 <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                   Company Name
@@ -1480,9 +1477,6 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
                 >
                   <td className={`px-3 py-3 text-center font-semibold text-text-secondary-light dark:text-text-secondary-dark border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '60px', maxWidth: '60px' }}>
                     {row.sNo}
-                  </td>
-                  <td className={`px-3 py-3 text-text-secondary-light dark:text-text-secondary-dark border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
-                    {row.customerName || 'NN'}
                   </td>
                   <td className={`px-3 py-3 text-text-secondary-light dark:text-text-secondary-dark border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     {row.companyName}
