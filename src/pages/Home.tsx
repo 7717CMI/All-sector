@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Users, ArrowRight, LucideIcon } from 'lucide-react'
+import { Users, ArrowRight, LucideIcon, Layers } from 'lucide-react'
 import { DemoNotice } from '../components/DemoNotice'
 
 interface HomeProps {
@@ -21,6 +21,13 @@ export function Home({ onNavigate }: HomeProps) {
       description: "Customer database and insights for Global IT MSP Airline Industry Database",
       icon: Users,
       id: "CustomerIntelligence",
+      gradient: "#0075FF",
+    },
+    {
+      title: "Customer Intelligence-All Sectors",
+      description: "Customer database and insights across all industry sectors",
+      icon: Layers,
+      id: "AllSector",
       gradient: "#0075FF",
     },
   ]
