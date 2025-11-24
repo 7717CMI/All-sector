@@ -56,8 +56,8 @@ function App() {
   const getPageTitle = () => {
     const titles: Record<string, string> = {
       'Home': 'Home',
-      'CustomerIntelligence': 'Customer Intelligence',
-      'AllSector': 'All Sector',
+      'CustomerIntelligence': 'Customer Intelligence-Airlines',
+      'AllSector': 'Customer Intelligence-All Sectors',
       'Contact': 'Contact Us'
     }
     return titles[activePage] || 'Home'

@@ -26,8 +26,8 @@ export function Sidebar({ activeItem = 'Home', isOpen = true, onClose, onNavigat
 
   const navItems = [
     { icon: Home, label: 'Home', id: 'Home' },
-    { icon: Users, label: 'Customer Intelligence', id: 'CustomerIntelligence' },
-    { icon: Layers, label: 'All Sector', id: 'AllSector' },
+    { icon: Users, label: 'Customer Intelligence-Airlines', id: 'CustomerIntelligence' },
+    { icon: Layers, label: 'Customer Intelligence-All Sectors', id: 'AllSector' },
     { icon: Mail, label: 'Contact Us', id: 'Contact' },
   ]
 
