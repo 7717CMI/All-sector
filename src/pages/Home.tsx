@@ -88,7 +88,7 @@ export function Home({ onNavigate }: HomeProps) {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-6 mb-8 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-6xl mx-auto">
           {analysisTiles.map((tile) => {
             const TileIcon = tile.icon
             
