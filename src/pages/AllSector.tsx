@@ -1139,51 +1139,51 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                 ) : (
                   currentData.map((row, index) => (
                     <tr key={index} className={`border-b ${isDark ? 'border-navy-light hover:bg-navy-light/50' : 'border-gray-200 hover:bg-gray-50'}`}>
-                      <td className={`px-3 py-3 text-center ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 text-center border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {index + 1}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.customerName}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.companyName}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.companySize}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.industryArea}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.annualRevenue}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.geographicsFootprint}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.keyContact}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.designation}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.emailAddress}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.phoneWhatsApp}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.linkedinProfile}
                       </td>
-                      <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.websiteURL}
                       </td>
                       {activeProposition === 'proposition1' && (
                         <>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfEndpoints}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfServers}
                           </td>
                           <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
@@ -1193,28 +1193,28 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                       )}
                       {activeProposition === 'proposition2' && (
                         <>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfEndpoints}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfServers}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.cloudFootprint}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.dataCenterDetails}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.networkSize}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingSecurityStack}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.presenceOfInternalIT}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingMSPVendor}
                           </td>
                           <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
@@ -1224,58 +1224,58 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                       )}
                       {activeProposition === 'proposition3' && (
                         <>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfEndpoints}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfServers}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.cloudFootprint}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.dataCenterDetails}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.networkSize}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingSecurityStack}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.itBudgetApprox}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingMSPVendor}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.currentSLAsAndSupportHours}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.painPointsWithExistingIT}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.averageDowntimeIncidents}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingMonitoringTools}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.currentITSpend}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.currentMSPContractValue}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.pricingPreferences}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.renewalContractTimeline}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.budgetAvailableForOutsourcing}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.customerBenchmarkingSummary}
                           </td>
                           <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
