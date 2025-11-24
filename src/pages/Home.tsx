@@ -17,7 +17,7 @@ interface AnalysisTile {
 export function Home({ onNavigate }: HomeProps) {
   const analysisTiles: AnalysisTile[] = [
     {
-      title: "Customer Intelligence",
+      title: "Customer Intelligence-Airlines",
       description: "Customer database and insights for Global IT MSP Airline Industry Database",
       icon: Users,
       id: "CustomerIntelligence",
