@@ -65,7 +65,7 @@ export function Home({ onNavigate }: HomeProps) {
         className="mb-10 text-center"
       >
         <h1 className="text-3xl md:text-4xl font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
-          GLOBAL IT MSP AIRLINE INDUSTRY DATABASE
+          GLOBAL INDUSTRY DATABASE
         </h1>
         <p className="text-lg text-electric-blue dark:text-cyan-accent">
           Customer Intelligence Database
