@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import { Download } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
@@ -53,33 +53,6 @@ export function AllSector({ onNavigate }: AllSectorProps) {
   const isDark = theme === 'dark'
 
   const [activeProposition, setActiveProposition] = useState<Proposition>('proposition1')
-  const topScrollRef = useRef<HTMLDivElement>(null)
-  const tableScrollRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const topScroll = topScrollRef.current
-    const tableScroll = tableScrollRef.current
-
-    const handleTopScroll = () => {
-      if (tableScroll && topScroll) {
-        tableScroll.scrollLeft = topScroll.scrollLeft
-      }
-    }
-
-    const handleTableScroll = () => {
-      if (topScroll && tableScroll) {
-        topScroll.scrollLeft = tableScroll.scrollLeft
-      }
-    }
-
-    topScroll?.addEventListener('scroll', handleTopScroll)
-    tableScroll?.addEventListener('scroll', handleTableScroll)
-
-    return () => {
-      topScroll?.removeEventListener('scroll', handleTopScroll)
-      tableScroll?.removeEventListener('scroll', handleTableScroll)
-    }
-  }, [])
 
   // Proposition 1 Data - Basic IT Infrastructure (All Sectors)
   const proposition1Data: DistributorData[] = [
@@ -949,22 +922,8 @@ export function AllSector({ onNavigate }: AllSectorProps) {
             {activeProposition === 'proposition3' && 'Proposition 3 - Premium with Financial & Commercial Insights'}
           </h2>
 
-          {/* Top Scroll Bar */}
-          <div
-            ref={topScrollRef}
-            className="overflow-x-auto mb-4 pb-2"
-            style={{ overflowY: 'hidden' }}
-          >
-            <div style={{
-              width: activeProposition === 'proposition1' ? '2500px' :
-                     activeProposition === 'proposition2' ? '3500px' : '4500px',
-              height: '1px'
-            }}></div>
-          </div>
-
           {/* Table Container */}
           <div
-            ref={tableScrollRef}
             className="overflow-x-auto"
             style={{ maxHeight: '600px' }}
           >
