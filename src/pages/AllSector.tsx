@@ -1652,94 +1652,94 @@ export function AllSector({ onNavigate }: AllSectorProps) {
             <table className={`w-full border-collapse ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
               <thead className="sticky top-0 z-10">
                 <tr className={`border-b-2 ${isDark ? 'border-navy-light' : 'border-gray-300'}`}>
-                  <th className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-gray-300 text-gray-900' : 'bg-gray-200 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '60px', maxWidth: '60px' }}>
+                  <th className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-gray-300 text-gray-900' : 'bg-gray-200 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '60px', maxWidth: '60px' }}>
                     S.No.
                   </th>
-                  <th colSpan={6} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-orange-200 text-gray-900' : 'bg-orange-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th colSpan={6} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-orange-200 text-gray-900' : 'bg-orange-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     CUSTOMER INFORMATION
                   </th>
-                  <th colSpan={6} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-cyan-200 text-gray-900' : 'bg-cyan-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th colSpan={6} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-cyan-200 text-gray-900' : 'bg-cyan-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     CONTACT DETAILS
                   </th>
                   {activeProposition === 'proposition1' && (
-                    <th colSpan={3} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-purple-200 text-gray-900' : 'bg-purple-100 text-gray-900'}`}>
+                    <th colSpan={3} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-purple-200 text-gray-900' : 'bg-purple-100 text-gray-900'}`}>
                       Current IT Infrastructure Landscape
                     </th>
                   )}
                   {activeProposition === 'proposition2' && (
                     <>
-                      <th colSpan={6} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-purple-200 text-gray-900' : 'bg-purple-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                      <th colSpan={6} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-purple-200 text-gray-900' : 'bg-purple-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                         Current IT Infrastructure Landscape
                       </th>
-                      <th colSpan={3} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-pink-200 text-gray-900' : 'bg-pink-100 text-gray-900'}`}>
+                      <th colSpan={3} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-pink-200 text-gray-900' : 'bg-pink-100 text-gray-900'}`}>
                         Current IT Support Setup
                       </th>
                     </>
                   )}
                   {activeProposition === 'proposition3' && (
                     <>
-                      <th colSpan={6} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-purple-200 text-gray-900' : 'bg-purple-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                      <th colSpan={6} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-purple-200 text-gray-900' : 'bg-purple-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                         Current IT Infrastructure Landscape
                       </th>
-                      <th colSpan={6} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-pink-200 text-gray-900' : 'bg-pink-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                      <th colSpan={6} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-pink-200 text-gray-900' : 'bg-pink-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                         Current IT Support Setup
                       </th>
-                      <th colSpan={5} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-yellow-200 text-gray-900' : 'bg-yellow-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                      <th colSpan={5} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-yellow-200 text-gray-900' : 'bg-yellow-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                         Financial & Commercial Datapoints
                       </th>
-                      <th colSpan={2} className={`px-3 py-3 text-center font-bold ${isDark ? 'bg-green-200 text-gray-900' : 'bg-green-100 text-gray-900'}`}>
+                      <th colSpan={2} className={`px-2 py-1.5 text-center font-bold ${isDark ? 'bg-green-200 text-gray-900' : 'bg-green-100 text-gray-900'}`}>
                         CMI Insights
                       </th>
                     </>
                   )}
                 </tr>
                 <tr className={`border-b-2 ${isDark ? 'border-navy-light' : 'border-gray-300'}`}>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-gray-200 text-gray-900' : 'bg-gray-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '60px', maxWidth: '60px' }}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-gray-200 text-gray-900' : 'bg-gray-100 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '60px', maxWidth: '60px' }}>
                     S.No.
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Customer Name
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Company Name
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Company Size (SME or Large Enterprise)
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Industry Area
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Annual Revenue
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-orange-100 text-gray-900' : 'bg-orange-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Geographics | Footprint
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Key Contact Person
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Designation / Role
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Email Address (verified / generic)
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Phone / WhatsApp Number
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     LinkedIn Profile
                   </th>
-                  <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
+                  <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-cyan-100 text-gray-900' : 'bg-cyan-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`}>
                     Website URL
                   </th>
                   {activeProposition === 'proposition1' && (
                     <>
                       {/* Current IT Infrastructure Landscape - 3 columns */}
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Number of endpoints (laptops, desktops, mobile devices)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Number of servers (physical + virtual)
                       </th>
                       <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
@@ -1750,22 +1750,22 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                   {activeProposition === 'proposition2' && (
                     <>
                       {/* Current IT Infrastructure Landscape - 6 columns */}
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Number of endpoints (laptops, desktops, mobile devices)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Number of servers (physical + virtual)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Cloud footprint (Azure/AWS/GCP workloads)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Data center details (on-prem, colo, colocation, cloud)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Network size: routers, switches, firewalls, WAN links
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Existing security stack (EDR, antivirus, SIEM, firewalls)
                       </th>
                       {/* Current IT Support Setup - 3 columns */}
@@ -1783,22 +1783,22 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                   {activeProposition === 'proposition3' && (
                     <>
                       {/* Current IT Infrastructure Landscape - 6 columns */}
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Number of endpoints (laptops, desktops, mobile devices)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Number of servers (physical / virtual)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Cloud footprint (Azure/AWS/GCP workloads)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Data center details (on-prem, colo, colocation, cloud)
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Network size: routers, switches, SD-WAN firewalls, VPN
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-purple-100 text-gray-900' : 'bg-purple-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '120px', maxWidth: '120px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Existing security stack (EDR, antivirus, SIEM, firewalls)
                       </th>
                       {/* Current IT Support Setup - 6 columns */}
@@ -1837,10 +1837,10 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                         Budget availability for outsourcing
                       </th>
                       {/* CMI Insights - 2 columns */}
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-green-100 text-gray-900' : 'bg-green-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '150px', maxWidth: '150px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-green-100 text-gray-900' : 'bg-green-50 text-gray-900'} border-r ${isDark ? 'border-gray-400' : 'border-gray-300'}`} style={{ width: '150px', maxWidth: '150px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Customer Benchmarking Summary
                       </th>
-                      <th className={`px-3 py-3 text-center font-semibold ${isDark ? 'bg-green-100 text-gray-900' : 'bg-green-50 text-gray-900'}`} style={{ width: '150px', maxWidth: '150px', whiteSpace: 'normal', lineHeight: '1.4', wordWrap: 'break-word' }}>
+                      <th className={`px-2 py-1.5 text-center font-semibold ${isDark ? 'bg-green-100 text-gray-900' : 'bg-green-50 text-gray-900'}`} style={{ width: '150px', maxWidth: '150px', whiteSpace: 'normal', lineHeight: '1.3', wordWrap: 'break-word' }}>
                         Additional Comments / Notes
                       </th>
                     </>
@@ -1864,146 +1864,146 @@ export function AllSector({ onNavigate }: AllSectorProps) {
                 ) : (
                   currentData.map((row, index) => (
                     <tr key={index} className={`border-b ${isDark ? 'border-navy-light hover:bg-navy-light/50' : 'border-gray-200 hover:bg-gray-50'}`}>
-                      <td className={`px-3 py-3 text-center border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 text-center border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {index + 1}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.customerName}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.companyName}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.companySize}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.industryArea}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.annualRevenue}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.geographicsFootprint}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.keyContact}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.designation}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.emailAddress}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.phoneWhatsApp}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.linkedinProfile}
                       </td>
-                      <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                      <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                         {row.websiteURL}
                       </td>
                       {activeProposition === 'proposition1' && (
                         <>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfEndpoints}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfServers}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-2 py-1.5 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
                             {row.cloudFootprint}
                           </td>
                         </>
                       )}
                       {activeProposition === 'proposition2' && (
                         <>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfEndpoints}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfServers}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.cloudFootprint}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.dataCenterDetails}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.networkSize}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingSecurityStack}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.presenceOfInternalIT}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingMSPVendor}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-2 py-1.5 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
                             {row.currentSLAsAndSupportHours}
                           </td>
                         </>
                       )}
                       {activeProposition === 'proposition3' && (
                         <>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfEndpoints}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.numberOfServers}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.cloudFootprint}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.dataCenterDetails}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.networkSize}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingSecurityStack}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.itBudgetApprox}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingMSPVendor}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.currentSLAsAndSupportHours}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.painPointsWithExistingIT}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.averageDowntimeIncidents}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.existingMonitoringTools}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.currentITSpend}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.currentMSPContractValue}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.pricingPreferences}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.renewalContractTimeline}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.budgetAvailableForOutsourcing}
                           </td>
-                          <td className={`px-3 py-3 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
+                          <td className={`px-2 py-1.5 border-r ${isDark ? 'text-text-primary-dark border-gray-400' : 'text-text-primary-light border-gray-300'}`}>
                             {row.customerBenchmarkingSummary}
                           </td>
-                          <td className={`px-3 py-3 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
+                          <td className={`px-2 py-1.5 ${isDark ? 'text-text-primary-dark' : 'text-text-primary-light'}`}>
                             {row.additionalCommercialNotes}
                           </td>
                         </>
