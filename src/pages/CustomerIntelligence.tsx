@@ -1192,7 +1192,7 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
             })()}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
               <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={100} />
-              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Devices', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: isDark ? '#1e293b' : '#ffffff',
@@ -1232,8 +1232,8 @@ export function CustomerIntelligence({ onNavigate }: CustomerIntelligenceProps) 
               }).filter(d => d.budget > 0)
             })()}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
-              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={100} />
-              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} />
+              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={120} interval={0} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'IT Budget (₹ Crores)', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: isDark ? '#1e293b' : '#ffffff',
