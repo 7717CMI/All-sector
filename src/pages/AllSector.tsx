@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Download } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts'
 
 interface AllSectorProps {
   onNavigate: (page: string) => void
@@ -1580,6 +1581,224 @@ export function AllSector({ onNavigate }: AllSectorProps) {
           Comprehensive directory across all industry sectors
         </p>
       </motion.div>
+
+      {/* Charts Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        {/* Chart 1: Number of Endpoints */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className={`p-6 rounded-2xl shadow-xl ${isDark ? 'bg-navy-card border-2 border-navy-light' : 'bg-white border-2 border-gray-300'}`}
+        >
+          <h3 className="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+            Number of Endpoints (SME vs Large Enterprise)
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={(() => {
+              const getCurrentData = () => {
+                switch (activeProposition) {
+                  case 'proposition1':
+                    return proposition1Data
+                  case 'proposition2':
+                    return proposition2Data
+                  case 'proposition3':
+                    return proposition3Data
+                  default:
+                    return proposition1Data
+                }
+              }
+              const data = getCurrentData()
+              const smeData = data.filter(d => d.companySize?.toLowerCase().includes('sme') || d.companySize?.toLowerCase().includes('small') || d.companySize?.toLowerCase().includes('medium'))
+              const largeData = data.filter(d => d.companySize?.toLowerCase().includes('large'))
+
+              const smeEndpoints = smeData.reduce((sum, d) => {
+                const match = d.numberOfEndpoints?.match(/\d+/)
+                return sum + (match ? parseInt(match[0]) : 0)
+              }, 0)
+
+              const largeEndpoints = largeData.reduce((sum, d) => {
+                const match = d.numberOfEndpoints?.match(/\d+/)
+                return sum + (match ? parseInt(match[0]) : 0)
+              }, 0)
+
+              return [
+                { category: 'SME', endpoints: Math.round(smeEndpoints / Math.max(smeData.length, 1)) },
+                { category: 'Large Enterprise', endpoints: Math.round(largeEndpoints / Math.max(largeData.length, 1)) }
+              ]
+            })()}>
+              <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
+              <XAxis dataKey="category" stroke={isDark ? '#9ca3af' : '#6b7280'} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Endpoints', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                  border: `1px solid ${isDark ? '#475569' : '#e5e7eb'}`,
+                  borderRadius: '8px',
+                  color: isDark ? '#e5e7eb' : '#1f2937'
+                }}
+              />
+              <Legend />
+              <Bar dataKey="endpoints" fill="#0075FF" name="Avg Endpoints" />
+            </BarChart>
+          </ResponsiveContainer>
+        </motion.div>
+
+        {/* Chart 2: Number of Servers */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className={`p-6 rounded-2xl shadow-xl ${isDark ? 'bg-navy-card border-2 border-navy-light' : 'bg-white border-2 border-gray-300'}`}
+        >
+          <h3 className="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+            Number of Servers (SME vs Large Enterprise)
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={(() => {
+              const getCurrentData = () => {
+                switch (activeProposition) {
+                  case 'proposition1':
+                    return proposition1Data
+                  case 'proposition2':
+                    return proposition2Data
+                  case 'proposition3':
+                    return proposition3Data
+                  default:
+                    return proposition1Data
+                }
+              }
+              const data = getCurrentData()
+              const smeData = data.filter(d => d.companySize?.toLowerCase().includes('sme') || d.companySize?.toLowerCase().includes('small') || d.companySize?.toLowerCase().includes('medium'))
+              const largeData = data.filter(d => d.companySize?.toLowerCase().includes('large'))
+
+              const smeServers = smeData.reduce((sum, d) => {
+                const match = d.numberOfServers?.match(/\d+/)
+                return sum + (match ? parseInt(match[0]) : 0)
+              }, 0)
+
+              const largeServers = largeData.reduce((sum, d) => {
+                const match = d.numberOfServers?.match(/\d+/)
+                return sum + (match ? parseInt(match[0]) : 0)
+              }, 0)
+
+              return [
+                { category: 'SME', servers: Math.round(smeServers / Math.max(smeData.length, 1)) },
+                { category: 'Large Enterprise', servers: Math.round(largeServers / Math.max(largeData.length, 1)) }
+              ]
+            })()}>
+              <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
+              <XAxis dataKey="category" stroke={isDark ? '#9ca3af' : '#6b7280'} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Servers', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                  border: `1px solid ${isDark ? '#475569' : '#e5e7eb'}`,
+                  borderRadius: '8px',
+                  color: isDark ? '#e5e7eb' : '#1f2937'
+                }}
+              />
+              <Legend />
+              <Bar dataKey="servers" fill="#06B6D4" name="Avg Servers" />
+            </BarChart>
+          </ResponsiveContainer>
+        </motion.div>
+
+        {/* Chart 3: Network Size */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className={`p-6 rounded-2xl shadow-xl ${isDark ? 'bg-navy-card border-2 border-navy-light' : 'bg-white border-2 border-gray-300'}`}
+        >
+          <h3 className="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+            Network Size (Routers & Switches)
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={(() => {
+              const getCurrentData = () => {
+                switch (activeProposition) {
+                  case 'proposition1':
+                    return proposition2Data
+                  case 'proposition2':
+                    return proposition2Data
+                  case 'proposition3':
+                    return proposition3Data
+                  default:
+                    return proposition2Data
+                }
+              }
+              const data = getCurrentData()
+              return data.slice(0, 6).map(d => {
+                const routersMatch = d.networkSize?.match(/(\d+)\s*routers/i)
+                const switchesMatch = d.networkSize?.match(/(\d+)\s*switches/i)
+                const routers = routersMatch ? parseInt(routersMatch[1]) : 0
+                const switches = switchesMatch ? parseInt(switchesMatch[1]) : 0
+                return {
+                  company: d.companyName?.split('(')[0].trim() || 'Unknown',
+                  routers: routers,
+                  switches: switches
+                }
+              }).filter(d => d.routers > 0 || d.switches > 0)
+            })()}>
+              <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
+              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={100} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'Number of Devices', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                  border: `1px solid ${isDark ? '#475569' : '#e5e7eb'}`,
+                  borderRadius: '8px',
+                  color: isDark ? '#e5e7eb' : '#1f2937'
+                }}
+              />
+              <Legend />
+              <Bar dataKey="routers" fill="#8B5CF6" name="Routers" />
+              <Bar dataKey="switches" fill="#EC4899" name="Switches" />
+            </BarChart>
+          </ResponsiveContainer>
+        </motion.div>
+
+        {/* Chart 4: IT Budget */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className={`p-6 rounded-2xl shadow-xl ${isDark ? 'bg-navy-card border-2 border-navy-light' : 'bg-white border-2 border-gray-300'}`}
+        >
+          <h3 className="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+            IT Budget Comparison (Top Companies)
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={(() => {
+              const data = proposition3Data
+              return data.slice(0, 9).map(d => {
+                const budgetMatch = d.itBudgetApprox?.match(/[\d,]+/)
+                const budget = budgetMatch ? parseInt(budgetMatch[0].replace(/,/g, '')) : 0
+                return {
+                  company: d.companyName?.split('(')[0].trim() || 'Unknown',
+                  budget: budget
+                }
+              }).filter(d => d.budget > 0)
+            })()}>
+              <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#e5e7eb'} />
+              <XAxis dataKey="company" stroke={isDark ? '#9ca3af' : '#6b7280'} angle={-45} textAnchor="end" height={120} interval={0} />
+              <YAxis stroke={isDark ? '#9ca3af' : '#6b7280'} label={{ value: 'IT Budget (₹ Crores)', angle: -90, position: 'insideLeft', offset: 0, style: { textAnchor: 'middle', fill: isDark ? '#9ca3af' : '#6b7280' } }} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                  border: `1px solid ${isDark ? '#475569' : '#e5e7eb'}`,
+                  borderRadius: '8px',
+                  color: isDark ? '#e5e7eb' : '#1f2937'
+                }}
+                formatter={(value: number) => [`₹${value} Cr`, 'IT Budget']}
+              />
+              <Legend />
+              <Line type="monotone" dataKey="budget" stroke="#F59E0B" strokeWidth={3} name="IT Budget (₹ Cr)" dot={{ fill: '#F59E0B', r: 5 }} />
+            </LineChart>
+          </ResponsiveContainer>
+        </motion.div>
+      </div>
 
       {/* Proposition Tabs */}
       <div className={`p-6 rounded-2xl mb-8 shadow-xl ${isDark ? 'bg-navy-card border-2 border-navy-light' : 'bg-white border-2 border-gray-300'}`}>
